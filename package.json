@@ -1,0 +1,33 @@
+{
+  "name": "happy-birthday",
+  "version": "1.0.0",
+  "description": "An app that let's you say happy birthday to your friend in a nerdy way.",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "run-script-os": "^1.0.2"
+  },
+  "scripts": {
+    "start": "run-script-os",
+  "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --startPath /index.html",
+
+    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadunjayaweera/Yohan-Birthday.git"
+  },
+  "keywords": [
+    "Happy",
+    "Birthday"
+  ],
+  "author": "Afiur Rahman Fahim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nadunjayaweera/Yohan-Birthday/issues"
+  },
+  "homepage": "https://github.com/nadunjayaweera/Yohan-Birthday#readme",
+  "dependencies": {}
+}
